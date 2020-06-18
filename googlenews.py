@@ -5,7 +5,7 @@ import urllib.parse
 
 search_list = []
 keyword = quote('"柯文哲"'.encode('utf8'))
-res=requests.get("https://www.google.com.tw/search?num=50&q="+keyword+"&oq="+keyword+"&dcr=0&tbm=nws&source=lnt&tbs=qdr:d")
+res = requests.get("https://www.google.com.tw/search?num=50&q="+keyword+"&oq="+keyword+"&dcr=0&tbm=nws&source=lnt&tbs=qdr:d")
 
 # 關鍵字多加一個雙引號是精準搜尋
 # num: 一次最多要request的筆數, 可減少切換頁面的動作
